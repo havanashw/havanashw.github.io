@@ -351,10 +351,9 @@ body h4,
 body h5,
 body h6 {
   display: inline;
-  border-bottom: 1px dashed #666;
-  color: #666;
   text-decoration: none;
-  font-weight: normal;
+  color: #666;
+  font-weight: bold;
   font-size: 0.9rem;
 }
 body h3,
@@ -365,8 +364,11 @@ body h6 {
   margin-bottom: 0.5rem;
 }
 body hr {
-  border: 1px dashed #666;
+  border: 0.5px dashed #666;
+  opacity: 0.5;
   margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 body strong {
   font-weight: bold;
@@ -398,7 +400,7 @@ body abbr {
 body ul,
 body ol,
 body dl {
-  line-height: 1.725;
+  line-height: 1.75;
 }
 body ul ul,
 body ol ul,
@@ -429,7 +431,7 @@ body th {
   font-size: 15px;
 }
 body td {
-  padding: 9px 8px 0;
+  padding: 0 8px;
   border-bottom: none;
 }
 *,
@@ -453,8 +455,8 @@ body {
   color: #22272a;
   font-weight: 400;
   font-size: 16px;
-  font-family: "Helvetica", 'Helvetica', monospace;
-  line-height: 1.725;
+  font-family: "Helvetica", "Helvetica", monospace;
+  line-height: 1.75;
   font-display: swap;
   text-rendering: geometricPrecision;
   -moz-osx-font-smoothing: grayscale;
@@ -474,6 +476,9 @@ body h4 {
   flex-direction: column;
   min-height: 100%;
   overflow-wrap: break-word;
+}
+.content p {
+  margin-bottom: 0px;
 }
 .content #projects {
   margin-bottom: 1.5rem;
@@ -512,7 +517,7 @@ body h4 {
 .content article.page pre code {
   margin: 0;
   font-size: 16px;
-  font-family: "Helvetica", 'Helvetica', monospace;
+  font-family: "Helvetica", "Helvetica", monospace;
   font-display: swap;
 }
 .content article.page pre ::-webkit-scrollbar {
@@ -529,7 +534,7 @@ body h4 {
   padding: 0.1rem 0.4rem;
   border-style: none;
   border-radius: 4px;
-  font-family: "Helvetica", 'Helvetica', monospace;
+  font-family: "Helvetica", "Helvetica", monospace;
   -webkit-border-radius: 4px;
 }
 .content p {
@@ -545,12 +550,12 @@ body h4 {
   -webkit-hyphens: manual;
 }
 .content a {
-  color: #0366d6;
-  text-decoration: none;
+  color: #22272a;
+  text-decoration: underline;
 }
 .content a:hover {
   text-decoration: underline;
-  text-decoration-color: #0366d6;
+  text-decoration-color: #22272a;
 }
 .content a.icon {
   background: none;
@@ -631,7 +636,7 @@ body h4 {
 #header h1,
 #header .h1 {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 8px;
   color: #22272a;
   letter-spacing: 0.01em;
   font-weight: 700;
@@ -669,24 +674,24 @@ body h4 {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  line-height: 1rem;
-  letter-spacing: -999px;
+  line-height: 15px;
 }
 #header #nav ul a {
-  margin: 0 1rem;
+  margin-right: 15px;
   color: #cc2a41;
 }
 #header #nav ul a:hover {
-  background-image: linear-gradient(transparent, transparent 5px, #cc2a41 5px, #cc2a41);
+  background-image: linear-gradient(transparent, transparent 10px, #cc2a41 10px, #cc2a41);
   background-position: bottom;
   background-size: 100% 6px;
   background-repeat: repeat-x;
 }
 #header #nav ul li {
   display: inline-block;
-  border-right: 1px dotted #cc2a41;
+  margin-right: 15px;
+  border-right: 1px dotted;
+  border-color: #cc2a41;
   vertical-align: middle;
-  letter-spacing: 0;
 }
 #header #nav ul .icon {
   display: none;
@@ -697,9 +702,6 @@ body h4 {
 }
 #header #nav ul li:last-child a {
   margin-right: 0;
-}
-#header #nav ul li:nth-child(2) a {
-  margin: 0 1rem 0 0;
 }
 #header:hover #logo {
   filter: none;
@@ -803,15 +805,15 @@ body h4 {
   color: #cc2a41;
 }
 #header-post #menu {
-  visibility: hidden;
+  display: none;
   margin-right: 2rem;
 }
 #header-post #nav {
   color: #cc2a41;
   letter-spacing: 0.01em;
-  font-weight: 500;
+  font-weight: 200;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 #header-post #nav ul {
   line-height: 15px;
@@ -878,7 +880,7 @@ body h4 {
 }
 #header-post #toc .toc-level-2 {
   color: #22272a;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 #header-post #toc .toc-level-2:before {
   color: #cc2a41;
@@ -886,15 +888,14 @@ body h4 {
 }
 #header-post #toc .toc-level-3 {
   color: #666;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 #header-post #toc .toc-level-4 {
   color: #525252;
-  font-size: 0.8rem;
+  font-size: 0.4rem;
 }
 #header-post #toc .toc-level-5 {
-  color: #525252;
-  font-size: 0.7rem;
+  display: none;
 }
 #header-post #toc .toc-level-6 {
   display: none;
@@ -941,6 +942,14 @@ body h4 {
     float: left;
     margin-right: 2rem;
     font-style: italic;
+  }
+}
+@media print {
+  #header-post {
+    display: none;
+  }
+  #footer-post-container {
+    display: none;
   }
 }
 #footer-post {
@@ -1097,7 +1106,7 @@ body h4 {
 @media (min-width: 480px) {
   .post-list .post-item {
     display: flex;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   .post-list .post-item .meta {
     text-align: left;
@@ -1129,7 +1138,8 @@ article header .meta * {
   font-size: 0.8rem;
 }
 article header .author {
-  text-transform: uppercase;
+  \text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 0.01em;
   font-weight: 700;
   font-size: 0.8rem;
@@ -1144,21 +1154,10 @@ article .content h2:before {
   color: #cc2a41;
   content: "#";
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
-article .content h3:before {
-  color: #3cc4c4;
-  content: "*";
-  font-weight: bold;
-  font-size: 0.95rem;
-  padding-right: 5px;
-}
-article .content h4:before {
-  color: #5ea2a2;
-  content: "&";
-  font-weight: bold;
-  font-size: 0.9rem;
-  padding-right: 5px;
+article .content p {
+  margin-bottom: -0.7rem;
 }
 article .content img,
 article .content video {
@@ -1184,28 +1183,23 @@ article .content .video-container embed {
   height: 100%;
 }
 article .content blockquote {
-  margin: 1rem 10px;
-  padding: 0.5em 10px;
-  background: inherit;
-  color: #cc2a41;
-  quotes: "\201C" "\201D" "\2018" "\2019";
-  font-weight: bold;
+  background: #f6f6f6;
+  margin: 0;
+  padding: 0 15px;
+  color: #666;
+  border-left: 4px solid #ddd;
 }
 article .content blockquote p {
-  margin: 0;
-}
-article .content blockquote:before {
-  margin-right: 0.25em;
-  color: #cc2a41;
-  content: "\201C";
-  vertical-align: -0.4em;
-  font-size: 2em;
-  line-height: 0.1em;
+  display: block;
+  margin-block-start: 0.2em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 article .content blockquote footer {
   margin: line-height 0;
   color: #666;
-  font-size: 11px;
+  font-size: 12px;
 }
 article .content blockquote footer a {
   background-image: linear-gradient(transparent, transparent 5px, #666 5px, #666);
@@ -1270,8 +1264,8 @@ article .content .caption {
     content: "|";
   }
 }
-#archive {
-  margin-bottom: 2rem;
+#archive .post-year {
+  list-style-type: none;
 }
 #archive .post-list {
   padding: 0;
@@ -1309,8 +1303,7 @@ article .content .caption {
   color: #666;
   vertical-align: top;
   text-align: center;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 12px;
 }
 #footer ul {
   margin: 0;
@@ -1320,7 +1313,8 @@ article .content .caption {
 #footer li {
   display: inline-block;
   margin-right: 15px;
-  border-right: 1px solid #666;
+  border-right: 1px solid;
+  border-color: #666;
   vertical-align: middle;
 }
 #footer li a {
@@ -1342,63 +1336,36 @@ article .content .caption {
   color: #858585;
 }
 #footer .footer-left {
+  height: 20px;
   vertical-align: middle;
+  line-height: 20px;
 }
-@media (min-width: 300px) {
+@media (min-width: 39rem) {
   #footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    margin: auto;
+    margin-bottom: 20px;
   }
-  #footer a {
-    text-decoration: none;
-  }
-  #footer a:hover {
-    text-decoration: underline;
-  }
-  #footer .footer-top {
+  #footer .footer-left {
     align-self: flex-start;
-    flex-basis: auto;
-    flex-grow: 1;
-    flex-shrink: 1;
     margin-right: 20px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
   }
-  #footer .footer-bottom {
-    margin: 0.3rem 0 1rem 0;
-    width: 100%;
-    height: 40px;
-    text-align: center;
-  }
-  #footer .footer-bottom .site-uv {
-    margin-right: 0.2rem;
-  }
-  #footer .footer-bottom .site-uv::after {
-    content: "|";
-    padding-left: 0.2rem;
-  }
-  #footer .img-response {
-    width: 64px;
-    height: 32px;
-    vertical-align: middle;
-    line-height: 40px;
+  #footer .footer-right {
+    align-self: flex-end;
   }
 }
 .pagination {
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: 2rem;
   width: 100%;
   text-align: center;
-  font-weight: 400;
 }
 .pagination .page-number {
   color: #22272a;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .pagination a {
   padding: 4px 6px;
@@ -1483,8 +1450,8 @@ article .content .caption {
   font-display: swap;
   font-weight: 400;
   font-size: 12.8px;
-  font-family: "Helvetica", 'Helvetica', monospace;
-  line-height: 1.725;
+  font-family: "Helvetica", "Helvetica", monospace;
+  line-height: 1.75;
   text-rendering: geometricPrecision;
   text-align: center;
   word-wrap: break-word;
@@ -1585,55 +1552,77 @@ article .content .caption {
 }
 .highlight {
   color: #333;
+  background: #f8f8f8;
 }
 .highlight .code .comment,
-.highlight .code .meta {
-  color: #969896;
-}
-.highlight .code .string,
-.highlight .code .variable,
-.highlight .code .template-variable,
-.highlight .code .strong,
-.highlight .code .emphasis,
 .highlight .code .quote {
-  color: #df5000;
+  color: #998;
+  font-style: italic;
 }
 .highlight .code .keyword,
 .highlight .code .selector-tag,
-.highlight .code .type {
-  color: #a71d5d;
-}
-.highlight .code .literal,
-.highlight .code .symbol,
-.highlight .code .bullet,
-.highlight .code .attribute {
-  color: #0086b3;
-}
-.highlight .code .section,
-.highlight .code .name {
-  color: #63a35c;
-}
-.highlight .code .tag {
+.highlight .code .subst {
   color: #333;
+  font-weight: bold;
+}
+.highlight .code .number,
+.highlight .code .literal,
+.highlight .code .variable,
+.highlight .code .template-variable,
+.highlight .code .tag .attr {
+  color: #008080;
+}
+.highlight .code .string,
+.highlight .code .doctag {
+  color: #d14;
 }
 .highlight .code .title,
-.highlight .code .attr,
-.highlight .code .selector-id,
-.highlight .code .selector-class,
-.highlight .code .selector-attr,
-.highlight .code .selector-pseudo {
-  color: #795da3;
+.highlight .code .section,
+.highlight .code .selector-id {
+  color: #900;
+  font-weight: bold;
 }
-.highlight .code .addition {
-  color: #55a532;
-  background-color: #eaffea;
+.highlight .code .subst {
+  font-weight: normal;
+}
+.highlight .code .type,
+.highlight .code .class .title {
+  color: #458;
+  font-weight: bold;
+}
+.highlight .code .tag,
+.highlight .code .name,
+.highlight .code .attribute {
+  color: #000080;
+  font-weight: normal;
+}
+.highlight .code .regexp,
+.highlight .code .link {
+  color: #009926;
+}
+.highlight .code .symbol,
+.highlight .code .bullet {
+  color: #990073;
+}
+.highlight .code .built_in,
+.highlight .code .builtin-name {
+  color: #0086b3;
+}
+.highlight .code .meta {
+  color: #999;
+  font-weight: bold;
 }
 .highlight .code .deletion {
-  color: #bd2c00;
-  background-color: #ffecec;
+  background: #fdd;
 }
-.highlight .code .link {
-  text-decoration: underline;
+.highlight .code .addition {
+  background: #dfd;
+}
+.highlight .code .emphasis {
+  font-style: italic;
+}
+.highlight .code .strong {
+  font-weight: bold;
 }
 pre {
   overflow-x: auto;
@@ -1651,13 +1640,15 @@ pre code {
   overflow-x: auto;
   padding-left: 1em;
   border-radius: 4px;
-  font-family: "Inconsolata", monospace !important;
+  font-family: "Courier", monospace !important;
   display: block;
-  border: none;
+  \border: none;
+  border: 1px solid #d6d6d6;
 }
 code {
   padding: 0 5px;
-  border: 1px dotted #666;
+  \border: 1px dotted #666;
+  border: 1px solid #d6d6d6;
   border-radius: 2px;
   -webkit-border-radius: 2px;
 }
@@ -1669,7 +1660,7 @@ ol>li code {
   border-style: none;
   border-radius: 4px;
   background-color: rgba(200,200,200,0.3);
-  font-family: "Inconsolata", monospace;
+  font-family: "Courier", monospace;
   -webkit-border-radius: 4px;
 }
 table tr:nth-child(2n) {
@@ -1680,13 +1671,13 @@ td code {
   padding: 0.2em 0.4em;
   border-radius: 4px;
   background-color: rgba(27,31,35,0.05);
-  font-family: "Inconsolata", monospace;
+  font-family: "Courier", monospace;
   -webkit-border-radius: 4px;
 }
 table {
   \font-weight: 400;
   font-size: 16px !important;
-  font-family: "Helvetica", 'Helvetica', monospace;
+  font-family: "Helvetica", "Helvetica", monospace;
 }
 table tr td:not(.gutter):not(.code),
 table tr th:not(.gutter):not(.code) {
