@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Rmarkdown导出中文PDF解决方案</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="manifest" href="/site.webmanifest">
+
+        
+    
+    <link rel='stylesheet' href="/./css/dracula.css">
+
+    <meta name="generator" content="Hexo 5.4.0"></head>
+    <body>
+        <header class="al_header al_pos_fixed">
+    <div class="al_header_container dis_flex_jcenter">
+        <div class="al_header_container_left">
+            <div class="al_header_site_title">
+                <a href="/">Hongwei Shi's Homepage</a>
+            </div>
+        </div>
+
+        <div class="dis_flex_jcenter">
+            <div class="al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-menu"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="al_sidebar">
+
+    <div class="al_sidebar_overlay al_full_cover"></div>
+
+    <div class="al_pos_fixed al_sidebar_cnt">
+        <div class="dis_flex_acenter al_sidebar_header">
+            <h3>Hongwei Shi's Homepage</h3>
+            <div class="al_sidebar_close al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-close"></use>
+                </svg>
+            </div>
+        </div>
+
+        <div class="al_sidebar_author_cnt">
+
+            <div class="al_sidebar_author_info">
+                <h4>Hongwei Shi</h4>
+                <img class="al_sidebar_avatar" src="https://yourAvatorURL">
+                <p>Hi everyone, This is my blog website where I will record and share my research & daily life with you!</p>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+
+        
+    <div class="dis_flex_center al_lightbox_cnt al_full_cover">
+        <img class="al_lightbox_img"/>
+    </div>
+    <div class="al_page_background dis_flex_center al_full_cover"></div>
+    <div class="al_page_container">
+        <div class="al_pos_ab al_fake_background"></div>
+        <div class="al_main_container al_shadow al_main_page_container">
+            <article class="al_article">
+                <header>
+                    <h1 class="al_page_title">
+                        Rmarkdown导出中文PDF解决方案
+                    </h1>
+                    <div class="al_page_info dis_flex">
+                        <div class="al_page_content_info">
+                            Thu September 16, 2021 11:14 PM
+                        </div>
+
+                        
+                            <div class="al_page_content_info">
+                                188 words
+                            </div>
+                        
+
+                        
+                            <div class="al_page_content_info">
+                                1 minutes read
+                            </div>
+                        
+                        <span class="tags"></span>
+                    </div>
+                </header>
+
+                
+                    <div class="al_page_content_outline">
+                        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%9C%80%E8%A6%81%E8%A7%A3%E5%86%B3%E7%9A%84%E6%A0%B8%E5%BF%83%E9%97%AE%E9%A2%98"><span class="toc-text">需要解决的核心问题</span></a></li></ol>
+                    </div>
+                
+
+                
+                <section id="post-body">
+                    <h1 id="需要解决的核心问题"><a href="#需要解决的核心问题" class="headerlink" title="需要解决的核心问题"></a>需要解决的核心问题</h1><p><strong>配置TeX环境</strong>：<a target="_blank" rel="noopener" href="https://www.latexstudio.net/texdoc/#/28?page_id=114">LaTex发行版与下载</a></p>
+<ul>
+<li><p>方案1：安装任一LaTeX套件：TexLive\CTeX\MiKTex\MacTeX，推荐TexLive for Windows；MacTeX for MacOS</p>
+</li>
+<li><p>方案2：未配置TeX环境的朋友可以安装TinyTeX</p>
+<ul>
+<li><p>作者：<a target="_blank" rel="noopener" href="https://yihui.org/">谢益辉</a></p>
+</li>
+<li><p>安装：</p>
+  <figure class="highlight r"><table><tr><td class="code"><pre><span class="line">install.packages(<span class="string">&quot;tinytex&quot;</span>)</span><br><span class="line">tinytex::install_tinytex()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>参考文档查看详细用法：<a target="_blank" rel="noopener" href="https://yihui.org/tinytex/cn/">TinyTeX 中文文档</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>PDF显示中文</strong>：使用rticles包中的中文模板</p>
+<ul>
+<li><p>作者：<a target="_blank" rel="noopener" href="https://yihui.org/">谢益辉</a></p>
+</li>
+<li><p>安装：</p>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">install.packages(<span class="string">&quot;rticles&quot;</span>) <span class="comment"># from CRAN</span></span><br><span class="line">remotes::install_github(<span class="string">&quot;rstudio/rticles&quot;</span>) <span class="comment"># the development version from GitHub</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>参考文档：<a target="_blank" rel="noopener" href="https://github.com/rstudio/rticles">rticles package</a></p>
+</li>
+<li><p>安装之后使用现成模板：</p>
+</li>
+</ul>
+<p><img src="/2021/09/16/Rmarkdown%E5%AF%BC%E5%87%BA%E4%B8%AD%E6%96%87PDF%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/image-20210916224725169.png" alt></p>
+<p><img src="/2021/09/16/Rmarkdown%E5%AF%BC%E5%87%BA%E4%B8%AD%E6%96%87PDF%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/image-20210916224758238.png" alt></p>
+<ul>
+<li><p>YAML文件示例：</p>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">title: <span class="string">&quot;在R Markdown文档中使用中文&quot;</span></span><br><span class="line">author:</span><br><span class="line">  - author A</span><br><span class="line">  - author B</span><br><span class="line">documentclass: ctexart</span><br><span class="line">geometry: <span class="string">&quot;left=2.5cm, right=2cm, top=3cm, bottom=2.5cm&quot;</span></span><br><span class="line">output:</span><br><span class="line">  rticles::ctex:</span><br><span class="line">    fig_caption: yes</span><br><span class="line">    number_sections: yes</span><br><span class="line">    toc: yes</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+                </section>
+
+                
+                
+                
+
+            </article>
+
+            
+            <nav class="dis_flex al_post_nav">
+                <a class="al_post_nav_item dis_flex_acenter" href="/">
+                    
+                </a>
+                <a class="al_post_nav_item dis_flex_acenter" href="/2021/09/13/The-Collections-of-Statistics-Books/">
+                    
+                        <span class="al_text_ellipsis al_post_nav_desc">The Collections of Statistics Books</span>
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-right"></use>
+                        </svg>
+                    
+                </a>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="al_index_footer dis_flex_center">
+    <div class="al_index_footer_item al_index_footer_title">
+        Hongwei Shi
+    </div>
+
+    
+    
+
+    <div class="al_index_footer_item al_index_footer_extra">
+        Created By 
+        <a target="_blank" rel="noopener" href="https://github.com/iGuan7u/Acetolog">AcetoLog</a>
+         · Power By 
+        <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>
+    </div>
+
+    <div class="al_index_footer_item al_index_footer_extra_right">
+        All Right Reserved
+    </div>
+</div>
+
+        <script type="text/javascript" async="async" src="/javascripts/acelog.js"></script>
+        
+        
+        
+        
+    </body>
+</html>
+        
