@@ -1,110 +1,150 @@
-
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>我的博客建好啦！</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
-<link rel="stylesheet" href="/css/style.css">
-<link rel="shortcut icon" href="/favicon.ico">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="manifest" href="/site.webmanifest">
-
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    
+    
+        
+            
+                <link rel="shortcut icon" href="/images/favicon.ico">
+            
+        
+        
+            
+                <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+            
+        
+        
+            
+                <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+            
         
     
-    <link rel='stylesheet' href="/./css/dracula.css">
+    <!-- title -->
+    <title>我的博客建好啦！</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
 
-    <meta name="generator" content="Hexo 5.4.0"></head>
-    <body>
-        <header class="al_header al_pos_fixed">
-    <div class="al_header_container dis_flex_jcenter">
-        <div class="al_header_container_left">
-            <div class="al_header_site_title">
-                <a href="/">Hongwei Shi's Homepage</a>
-            </div>
-        </div>
-
-        <div class="dis_flex_jcenter">
-            <div class="al_header_setting">
-                <svg class="al_header_icon">
-                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-menu"></use>
-                </svg>
-            </div>
-        </div>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@2/distr/fira_code.css" rel="stylesheet">
+    <!-- rss -->
+    
+    
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body class="max-width mx-auto px3 ">
+    
+      <div id="header-post">
+    <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+    <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+    <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i
+                class="fas fa-chevron-up fa-lg"></i></a>
+    <span id="menu">
+    <span id="nav">
+      <ul>
+          
+              <li><a href="/">Home</a></li>
+          
+              <li><a href="/about/">About</a></li>
+          
+              <li><a href="/archives/">Articles</a></li>
+          
+              <li><a href="/categories/">Categories</a></li>
+          
+              <li><a href="/tags/">Tags</a></li>
+          
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+          
+              <li><a class="icon" href="/2021/09/13/The-Collections-of-Statistics-Books/"><i class="fas fa-chevron-left"
+                                                                           aria-hidden="true"
+                                                                           onmouseover="$('#i-prev').toggle();"
+                                                                           onmouseout="$('#i-prev').toggle();"></i></a></li>
+          
+          
+          <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i
+                          class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();"
+                          onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true"
+                                        onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();"
+                                        onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+    <li><a class="icon"
+           target="_blank" rel="noopener" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://havanashw.github.io/2021/08/13/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%BB%BA%E5%A5%BD%E5%95%A6/&title=我的博客建好啦！"><i
+                    class="fab fa-qq " aria-hidden="true"></i></a></li>
+    <li><a class="icon"
+           target="_blank" rel="noopener" href="https://service.weibo.com/share/share.php?url=https://havanashw.github.io/2021/08/13/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%BB%BA%E5%A5%BD%E5%95%A6/&title=我的博客建好啦！"><i
+                    class="fab fa-weibo " aria-hidden="true"></i></a></li>
+    <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://havanashw.github.io/2021/08/13/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%BB%BA%E5%A5%BD%E5%95%A6/&text=我的博客建好啦！"><i
+                    class="fab fa-twitter " aria-hidden="true"></i></a></li>
+    <li><a class="icon" href="mailto:?subject=我的博客建好啦！&body=Check out this article: https://havanashw.github.io/2021/08/13/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%BB%BA%E5%A5%BD%E5%95%A6/"><i
+                    class="fas fa-envelope " aria-hidden="true"></i></a></li>
+</ul>
     </div>
-</header>
-
-        <div class="al_sidebar">
-
-    <div class="al_sidebar_overlay al_full_cover"></div>
-
-    <div class="al_pos_fixed al_sidebar_cnt">
-        <div class="dis_flex_acenter al_sidebar_header">
-            <h3>Hongwei Shi's Homepage</h3>
-            <div class="al_sidebar_close al_header_setting">
-                <svg class="al_header_icon">
-                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-close"></use>
-                </svg>
-            </div>
-        </div>
-
-        <div class="al_sidebar_author_cnt">
-
-            <div class="al_sidebar_author_info">
-                <h4>Hongwei Shi</h4>
-                <img class="al_sidebar_avatar" src="https://yourAvatorURL">
-                <p>Hi everyone, This is my blog website where I will record and share my research & daily life with you!</p>
-            </div>
-
-            
-        </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#markdown%E6%8E%92%E7%89%88%E6%B5%8B%E8%AF%95"><span class="toc-number">1.</span> <span class="toc-text">markdown排版测试</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E5%AD%97"><span class="toc-number">1.1.</span> <span class="toc-text">文字</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="toc-number">1.2.</span> <span class="toc-text">代码块</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%BE%E8%A1%A8"><span class="toc-number">1.3.</span> <span class="toc-text">图表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E5%9B%BE"><span class="toc-number">1.4.</span> <span class="toc-text">插图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AC%E5%BC%8F"><span class="toc-number">1.5.</span> <span class="toc-text">公式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PDF"><span class="toc-number">1.6.</span> <span class="toc-text">PDF</span></a></li></ol></li></ol>
     </div>
+  </span>
 </div>
-
+    
+    <div class="content index py4">
         
-    <div class="dis_flex_center al_lightbox_cnt al_full_cover">
-        <img class="al_lightbox_img"/>
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        我的博客建好啦！
+    </h1>
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Hongwei Shi</span>
+      </span>
+      
+    <div class="postdate">
+        
+            <time datetime="2021-08-13T15:28:38.000Z"
+                  itemprop="datePublished">2021-08-13</time>
+            
+                (Updated:
+                <time datetime="2021-08-14T09:07:24.462Z"
+                      itemprop="dateModified">2021-08-14</time>)
+            
+        
     </div>
-    <div class="al_page_background dis_flex_center al_full_cover"></div>
-    <div class="al_page_container">
-        <div class="al_pos_ab al_fake_background"></div>
-        <div class="al_main_container al_shadow al_main_page_container">
-            <article class="al_article">
-                <header>
-                    <h1 class="al_page_title">
-                        我的博客建好啦！
-                    </h1>
-                    <div class="al_page_info dis_flex">
-                        <div class="al_page_content_info">
-                            Fri August 13, 2021 11:28 PM
-                        </div>
 
-                        
-                            <div class="al_page_content_info">
-                                542 words
-                            </div>
-                        
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/">日常生活</a>
+    </div>
 
-                        
-                            <div class="al_page_content_info">
-                                2 minutes read
-                            </div>
-                        
-                        <span class="tags"></span>
-                    </div>
-                </header>
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E6%B5%8B%E8%AF%95tag/" rel="tag">测试tag</a>, <a class="tag-link-link" href="/tags/%E6%B5%8B%E8%AF%95%E9%A1%B5%E9%9D%A2/" rel="tag">测试页面</a>
+    </div>
 
-                
-                    <div class="al_page_content_outline">
-                        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#markdown%E6%8E%92%E7%89%88%E6%B5%8B%E8%AF%95"><span class="toc-text">markdown排版测试</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E5%AD%97"><span class="toc-text">文字</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="toc-text">代码块</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%BE%E8%A1%A8"><span class="toc-text">图表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E5%9B%BE"><span class="toc-text">插图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AC%E5%BC%8F"><span class="toc-text">公式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PDF"><span class="toc-text">PDF</span></a></li></ol></li></ol>
-                    </div>
-                
-
-                
-                <section id="post-body">
-                    <h1 id="markdown排版测试"><a href="#markdown排版测试" class="headerlink" title="markdown排版测试"></a>markdown排版测试</h1><h2 id="文字"><a href="#文字" class="headerlink" title="文字"></a>文字</h2><p>朴树的歌好好听！朴树的歌好好听！朴树的歌好好听！朴树的歌好好听！朴树的歌好好听！朴树的歌好好听！朴树的歌好好听！朴树的歌好好听！朴树的歌好好听！</p>
+    </div>
+  </header>
+  
+  <div class="content" itemprop="articleBody">
+    <h1 id="markdown排版测试"><a href="#markdown排版测试" class="headerlink" title="markdown排版测试"></a>markdown排版测试</h1><h2 id="文字"><a href="#文字" class="headerlink" title="文字"></a>文字</h2><p>朴树的歌好好听！朴树的歌好好听！朴树的歌好好听！朴树的歌好好听！朴树的歌好好听！朴树的歌好好听！朴树的歌好好听！朴树的歌好好听！朴树的歌好好听！</p>
 <p>朴树的歌好好听！朴树的歌好好听！朴树的歌好好听！朴树的歌好好听！朴树的歌好好听！朴树的歌好好听！</p>
 <p>朴树的歌好好听 朴树的歌好好听 朴树的歌好好听！</p>
 <ul>
@@ -167,57 +207,143 @@ F(\omega)=\mathcal{F}[f(t)]=\int_{-\infty}^{\infty} f(t) e^{-i w t} d t</script>
 
 
 
-                </section>
+  </div>
+</article>
 
-                
-                
-                
+  <div class="blog-post-comments">
+      <div id="disqus_thread">
+          <noscript>Please enable JavaScript to view the comments.</noscript>
+      </div>
+  </div>
 
-            </article>
 
-            
-            <nav class="dis_flex al_post_nav">
-                <a class="al_post_nav_item dis_flex_acenter" href="/2021/09/13/The-Collections-of-Statistics-Books/">
-                    
-                        <svg class="al_arrow">
-                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-left"></use>
-                        </svg>
-                        <span class="al_text_ellipsis al_post_nav_desc">The Collections of Statistics Books</span>
-                    
-                </a>
-                <a class="al_post_nav_item dis_flex_acenter" href="/">
-                    
-                </a>
-            </nav>
+        
+          <div id="footer-post-container">
+    <div id="footer-post">
+
+        <div id="nav-footer" style="display: none">
+            <ul>
+                
+                    <li><a href="/">Home</a></li>
+                
+                    <li><a href="/about/">About</a></li>
+                
+                    <li><a href="/archives/">Articles</a></li>
+                
+                    <li><a href="/categories/">Categories</a></li>
+                
+                    <li><a href="/tags/">Tags</a></li>
+                
+            </ul>
         </div>
-    </div>
 
+        <div id="toc-footer" style="display: none">
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#markdown%E6%8E%92%E7%89%88%E6%B5%8B%E8%AF%95"><span class="toc-number">1.</span> <span class="toc-text">markdown排版测试</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E5%AD%97"><span class="toc-number">1.1.</span> <span class="toc-text">文字</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="toc-number">1.2.</span> <span class="toc-text">代码块</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%BE%E8%A1%A8"><span class="toc-number">1.3.</span> <span class="toc-text">图表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E5%9B%BE"><span class="toc-number">1.4.</span> <span class="toc-text">插图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AC%E5%BC%8F"><span class="toc-number">1.5.</span> <span class="toc-text">公式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PDF"><span class="toc-number">1.6.</span> <span class="toc-text">PDF</span></a></li></ol></li></ol>
+        </div>
 
-        <div class="al_index_footer dis_flex_center">
-    <div class="al_index_footer_item al_index_footer_title">
-        Hongwei Shi
-    </div>
+        <div id="share-footer" style="display: none">
+            <ul>
+    <li><a class="icon"
+           target="_blank" rel="noopener" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://havanashw.github.io/2021/08/13/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%BB%BA%E5%A5%BD%E5%95%A6/&title=我的博客建好啦！"><i
+                    class="fab fa-qq fa-lg" aria-hidden="true"></i></a></li>
+    <li><a class="icon"
+           target="_blank" rel="noopener" href="https://service.weibo.com/share/share.php?url=https://havanashw.github.io/2021/08/13/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%BB%BA%E5%A5%BD%E5%95%A6/&title=我的博客建好啦！"><i
+                    class="fab fa-weibo fa-lg" aria-hidden="true"></i></a></li>
+    <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://havanashw.github.io/2021/08/13/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%BB%BA%E5%A5%BD%E5%95%A6/&text=我的博客建好啦！"><i
+                    class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+    <li><a class="icon" href="mailto:?subject=我的博客建好啦！&body=Check out this article: https://havanashw.github.io/2021/08/13/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%BB%BA%E5%A5%BD%E5%95%A6/"><i
+                    class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+        </div>
 
-    
-    
+        <div id="actions-footer">
+            <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i
+                        class="fas fa-bars fa-lg"
+                        aria-hidden="true"></i> Menu</a>
+            <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i
+                        class="fas fa-list fa-lg"
+                        aria-hidden="true"></i> TOC</a>
+            <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i
+                        class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+            <a id="top" style="display:none" class="icon" href="#"
+               onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg"
+                                                                               aria-hidden="true"></i> Top
+            </a>
+        </div>
 
-    <div class="al_index_footer_item al_index_footer_extra">
-        Created By 
-        <a target="_blank" rel="noopener" href="https://github.com/iGuan7u/Acetolog">AcetoLog</a>
-         · Power By 
-        <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>
-    </div>
-
-    <div class="al_index_footer_item al_index_footer_extra_right">
-        All Right Reserved
     </div>
 </div>
+        
+        <footer id="footer">
+  <div class="footer-top">
+    &copy; 2021 <i class="fas fa-heart"></i>
+    Hongwei Shi 
+  </div>
 
-        <script type="text/javascript" async="async" src="/javascripts/acelog.js"></script>
-        
-        
-        
-        
-    </body>
+  <div class="footer-bottom">
+    
+    <!-- tongji -->
+    <script
+      async
+      src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+    ></script>
+    <span class="site-uv">
+      <i class="fa fa-user"></i> 访问人数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+    <span class="site-pv">
+      <i class="fa fa-eye"></i> 访问总量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+    <br />
+     
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css">
+
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/justifiedGallery/3.7.0/css/justifiedGallery.min.css">
+
+    <!-- jquery -->
+
+<script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="https://cdn.staticfile.org/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js"></script>
+
+<!-- clipboard -->
+
+    
+<script src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            // copy-btn HTML
+            var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+            btn += '<i class="far fa-clone"></i>';
+            btn += '</span>';
+            // mount it!
+            $(".highlight .code pre").before(btn);
+            var clip = new ClipboardJS('.btn-copy', {
+                target: function (trigger) {
+                    return trigger.nextElementSibling;
+                }
+            });
+            clip.on('success', function (e) {
+                e.trigger.setAttribute('aria-label', "Copied!");
+                e.clearSelection();
+            })
+        })
+    </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+</body>
 </html>
-        
