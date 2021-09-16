@@ -550,8 +550,8 @@ body h4 {
   -webkit-hyphens: manual;
 }
 .content a {
-  color: #22272a;
-  text-decoration: underline;
+  color: #cc2a41;
+  text-decoration: none;
 }
 .content a:hover {
   text-decoration: underline;
