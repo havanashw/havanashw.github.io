@@ -1,9 +1,9 @@
 /* Default css file for jemdoc. */
 
 table#tlayout {
-    border: none;
-    border-collapse: separate;
-    background: white;
+        border: none;
+        border-collapse: separate;
+        background: white;
 }
 
 body {
@@ -22,13 +22,13 @@ body {
 	font-size: 1.0em;
 	width: auto;
 	white-space: nowrap;
-    text-align: left;
-    vertical-align: top;
+        text-align: left;
+        vertical-align: top;
 }
 
 #layout-menu td {
 	background: #f4f4f4;
-    vertical-align: top;
+        vertical-align: top;
 }
 
 #layout-content {
@@ -49,7 +49,7 @@ body {
 }
 
 tt {
-    background: #ffffdd;
+        background: #ffffdd;
 }
 
 pre, tt {
@@ -338,32 +338,32 @@ img.eqwl {
 }
 
 table {
-    border: 2px solid black;
-    border-collapse: collapse;
+        border: 2px solid black;
+        border-collapse: collapse;
 }
 
 td {
-    padding: 2px;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    text-align: center;
-    border: 1px solid gray;
+	padding: 2px;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	text-align: center;
+	border: 1px solid gray;
 }
 
 table + table {
-    margin-top: 1em;
+        margin-top: 1em;
 }
 
 tr.heading {
-    font-weight: bold;
-    border-bottom: 2px solid black;
+        font-weight: bold;
+        border-bottom: 2px solid black;
 }
 
 img {
-    border: none;
+        border: none;
 }
 
 table.imgtable, table.imgtable td {
-    border: none;
-    text-align: left;
+        border: none;
+        text-align: left;
 }
